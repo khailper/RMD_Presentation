@@ -2,18 +2,28 @@
 title: "Authoring Documents in RStudio"
 author: "khailper"
 date: "December 20, 2016"
-output: ioslides_presentation
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## R Markdown
+## Basics
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+* RMarkdown
+    + R version of Markdown, a markup language
+* YAML
+    + header (RStudio builds this for you)
+    + tells computer what kind of doc your building
+* knitr
+    + package that integrates the above (along with other components like LaTeX) to actually build the document
+* RStudio has a couple of documents that flesh out most of the material in this presentation
+    + [link](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+    + [link](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
 
 ## Slide with Bullets
 
