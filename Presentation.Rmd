@@ -1,10 +1,8 @@
 ---
 title: "Authoring Documents in RStudio"
 author: "khailper"
-date: "December 20, 2016"
-output:
-  slidy_presentation: default
-  ioslides_presentation: default
+date: "January 10, 2017"
+output: slidy_presentation
 ---
 
 ```{r setup, include=FALSE}
@@ -21,25 +19,61 @@ knitr::opts_chunk$set(echo = FALSE)
 * knitr
     + package that integrates the above (along with other components like LaTeX) to actually build the document
 * RStudio has a couple of documents that flesh out most of the material in this presentation
-    + [link](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
-    + [link](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+    + [cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+    + [reference document](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
 
 
-## Slide with Bullets
+## Creating a Document
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+* File -> New File -> R Markdown
+* Select document type you want to build
+    + this presentation was knit as a Slidy presentation
+* Some document types have additional requirements (LaTeX, Word)
+* RStudio automatically creates the apporopriate YAML header and some sample code
+* When you want to create the document, click "Knit"
 
-## Slide with R Output
+## RMarkdown Basics
 
-```{r cars, echo = TRUE}
-summary(cars)
-```
+* Starting line with #s followed by space for headers (more #s = sub-headers)
 
-## Slide with Plot
+* Format is done by surrounding text with symbols (`*` or _ for italics, ** or __ for bold, for ^ for superscripts)
+    + Equations are similar, surrounded by $
 
-```{r pressure}
-plot(pressure)
-```
+* These bullets were created with `*`
+    + The + symbol was used for this line
 
+* For .pdf/.doc files page breaks can be created by \newpage or \pagebreak (on its own line)
+
+* for slides, breaks by either (sub)headers or *** on one line
+
+## R Code in documents
+
+* For inline code, start code with `` `r `` and end with `` ` ``.
+    + e.g. to get `r sqrt(3)`, use `` `r `` ``sqrt(3)` ``. 
+
+* For code chunks, first line is ` ```{r nameofchunk} `
+    + code chunks don't need names, but can be useful
+    
+* Last line of chunk is ` ``` `.
+
+* Both should be their own line
+
+## Code Chunk Parameters
+* A variety of parameters can be included within {}
+
+* Some common ones (and their default values)
+    + eval (TRUE): Should the code be run
+    + echo (TRUE): should the code be displayed in doc
+
+##Other Additonal Documents That I Lack the Time and/or Expertise to Cover
+
+* R Notebooks
+
+* bookdown
+
+* flexdashboards
+
+* ReporteRs, ackage for creating Word/PPT docs and inserting code into existing ones
+    + http://davidgohel.github.io/ReporteRs/
+
+* More math syntax (sorry)
