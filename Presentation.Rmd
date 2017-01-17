@@ -1,7 +1,7 @@
 ---
 title: "Authoring Documents in RStudio"
 author: "khailper"
-date: "January 10, 2017"
+date: "January 19, 2017"
 output: slidy_presentation
 ---
 
