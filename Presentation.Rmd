@@ -42,7 +42,7 @@ knitr::opts_chunk$set(echo = FALSE)
 * These bullets were created with `*`
     + The + symbol was used for this line
 
-* For .pdf/.doc files page breaks can be created by \newpage or \pagebreak (on its own line)
+* For .pdf/.doc files page breaks can be created by `\newpage` or `\pagebreak` (on their own line)
 
 * for slides, breaks by either (sub)headers or *** on one line
 
