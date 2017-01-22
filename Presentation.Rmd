@@ -21,7 +21,15 @@ knitr::opts_chunk$set(echo = FALSE)
 * RStudio has a couple of documents that flesh out most of the material in this presentation
     + [cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
     + [reference document](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+    + availabl in RStudio (Help -> Cheetsheets)
 
+## Requirements
+
+* Rstudio
+
+* Packages
+
+* Additonal Programs
 
 ## Creating a Document
 
@@ -46,6 +54,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * for slides, breaks by either (sub)headers or *** on one line
 
+## Math Syntax Basics
+
 ## R Code in documents
 
 * For inline code, start code with `` `r `` and end with `` ` ``.
@@ -64,16 +74,13 @@ knitr::opts_chunk$set(echo = FALSE)
 * Some common ones (and their default values)
     + eval (TRUE): Should the code be run
     + echo (TRUE): should the code be displayed in doc
+    
+## Quick Demo
 
-##Other Additonal Documents That I Lack the Time and/or Expertise to Cover
+## R Notebooks
 
-* R Notebooks
+## bookdown
 
-* bookdown
+## flexdashboards
 
-* flexdashboards (uses htmlwidgets)
-
-* ReporteRs, package for creating Word/PPT docs and inserting code into existing ones
-    + http://davidgohel.github.io/ReporteRs/
-
-* More math syntax (sorry)
+## ReporteRs
