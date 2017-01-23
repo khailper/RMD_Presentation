@@ -49,21 +49,28 @@ khailper
 <h1>Requirements</h1>
 <ul>
 <li><p>Rstudio</p></li>
-<li><p>Packages</p></li>
-<li><p>Additonal Programs</p></li>
+<li>Packages
+<ul>
+<li>markdown</li>
+<li>yaml</li>
+</ul></li>
+<li>Additonal Programs
+<ul>
+<li>TeX for PDF documents</li>
+<li>MS Word or Open/Libre Office for Word documents</li>
+</ul></li>
 </ul>
 </div>
 <div id="creating-a-document" class="slide section level2">
 <h1>Creating a Document</h1>
 <ul>
-<li>File -&gt; New File -&gt; R Markdown</li>
+<li><p>File -&gt; New File -&gt; R Markdown</p></li>
 <li>Select document type you want to build
 <ul>
 <li>this presentation was knit as a Slidy presentation</li>
 </ul></li>
-<li>Some document types have additional requirements (LaTeX, Word)</li>
-<li>RStudio automatically creates the apporopriate YAML header and some sample code</li>
-<li>When you want to create the document, click “Knit”</li>
+<li><p>RStudio automatically creates the apporopriate YAML header and some sample code</p></li>
+<li><p>When you want to create the document, click “Knit”</p></li>
 </ul>
 </div>
 <div id="r-markdown-basics" class="slide section level2">
@@ -76,7 +83,8 @@ khailper
 </ul></li>
 <li>These bullets were created with <code>*</code>
 <ul>
-<li>The + symbol was used for this line</li>
+<li>The + symbol was used for this line (preceded by four spaces)</li>
+<li>For ordered lists, use [number].</li>
 </ul></li>
 <li><p>For .pdf/.doc files page breaks can be created by <code>\newpage</code> or <code>\pagebreak</code> (on their own line)</p></li>
 <li><p>for slides, breaks by either (sub)headers or *** on one line</p></li>
@@ -110,6 +118,14 @@ khailper
 <li>echo (TRUE): should the code be displayed in doc</li>
 </ul></li>
 <li><p>Can use knitr::opts_chunk$set(Parameter = TRUE/FALSE) to change defaults</p></li>
+</ul>
+</div>
+<div id="caching" class="slide section level2">
+<h1>Caching</h1>
+<ul>
+<li><p>By default, data from chunks not stored</p></li>
+<li><p>Can set cache = TRUE to store output</p></li>
+<li><p>This lasts until you change the chunk (however, doesn’t check if earlier chunk changed)</p></li>
 </ul>
 </div>
 <div id="quick-demo" class="slide section level2">

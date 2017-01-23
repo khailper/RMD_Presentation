@@ -18,6 +18,7 @@ knitr::opts_chunk$set(echo = FALSE)
 * YAML
     + Header (RStudio builds this for you)
     + Tells computer what kind of doc your building
+    
 * knitr
     + Package that integrates the above (along with other components like LaTeX) to actually build the document
     
@@ -32,16 +33,22 @@ knitr::opts_chunk$set(echo = FALSE)
 * Rstudio
 
 * Packages
-
+    + markdown
+    + yaml
+    
 * Additonal Programs
+    + TeX for PDF documents
+    + MS Word or Open/Libre Office for Word documents 
 
 ## Creating a Document
 
 * File -> New File -> R Markdown
+
 * Select document type you want to build
     + this presentation was knit as a Slidy presentation
-* Some document types have additional requirements (LaTeX, Word)
+    
 * RStudio automatically creates the apporopriate YAML header and some sample code
+
 * When you want to create the document, click "Knit"
 
 ## R Markdown Basics
@@ -52,7 +59,8 @@ knitr::opts_chunk$set(echo = FALSE)
     + Equations are similar, surrounded by $
 
 * These bullets were created with `*`
-    + The + symbol was used for this line
+    + The + symbol was used for this line (preceded by four spaces)
+    + For ordered lists, use [number].
 
 * For .pdf/.doc files page breaks can be created by `\newpage` or `\pagebreak` (on their own line)
 
@@ -80,7 +88,15 @@ knitr::opts_chunk$set(echo = FALSE)
     + echo (TRUE): should the code be displayed in doc
     
 * Can use knitr::opts_chunk$set(Parameter = TRUE/FALSE) to change defaults
-    
+
+##Caching
+
+* By default, data from chunks not stored
+
+* Can set cache = TRUE to store output
+
+* This lasts until you change the chunk (however, doesn't check if earlier chunk changed)
+
 ## Quick Demo
 
 ## R Notebooks
