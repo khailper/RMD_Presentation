@@ -2,7 +2,9 @@
 title: "Authoring Documents in RStudio"
 author: "khailper"
 date: "February 16, 2017"
-output: slidy_presentation
+output:
+  beamer_presentation: default
+  slidy_presentation: default
 ---
 
 ```{r setup, include=FALSE}
