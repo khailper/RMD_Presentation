@@ -1,7 +1,7 @@
 ---
 title: "Authoring Documents in RStudio"
 author: "khailper"
-date: "January 19, 2017"
+date: "February 16, 2017"
 output: slidy_presentation
 ---
 
@@ -11,17 +11,19 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Basics
 
-* RMarkdown
+* R Markdown
     + R version of Markdown, a markup language
 * YAML
-    + header (RStudio builds this for you)
-    + tells computer what kind of doc your building
+    + Header (RStudio builds this for you)
+    + Tells computer what kind of doc your building
 * knitr
-    + package that integrates the above (along with other components like LaTeX) to actually build the document
+    + Package that integrates the above (along with other components like LaTeX) to actually build the document
+    
 * RStudio has a couple of documents that flesh out most of the material in this presentation
     + [cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
     + [reference document](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
-    + availabl in RStudio (Help -> Cheetsheets)
+    + Available in RStudio (Help -> Cheetsheets)
+    + Even more resources at [http://rmarkdown.rstudio.com/](http://rmarkdown.rstudio.com/)
 
 ## Requirements
 
@@ -40,7 +42,7 @@ knitr::opts_chunk$set(echo = FALSE)
 * RStudio automatically creates the apporopriate YAML header and some sample code
 * When you want to create the document, click "Knit"
 
-## RMarkdown Basics
+## R Markdown Basics
 
 * Starting line with #s followed by space for headers (more #s = sub-headers)
 
@@ -75,12 +77,44 @@ knitr::opts_chunk$set(echo = FALSE)
     + eval (TRUE): Should the code be run
     + echo (TRUE): should the code be displayed in doc
     
+* Can use knitr::opts_chunk$set(Parameter = TRUE/FALSE) to change defaults
+    
 ## Quick Demo
 
 ## R Notebooks
 
+* Introducted in RStudio v1.0
+
+* Allows chunks to be run as you work, instead of having to re-knit the whole documents
+
+* Also allows chunks written in other languages
+
+* More resources at [http://rmarkdown.rstudio.com/r_notebooks.html](http://rmarkdown.rstudio.com/r_notebooks.html) and [https://blog.rstudio.org/2016/10/05/r-notebooks/](https://blog.rstudio.org/2016/10/05/r-notebooks/)
+
 ## bookdown
+
+* r package for authoring books w/R Markdown
+
+* In addition to HTML and PDF, can have EPUB outputs.
+
+* More resources at [https://bookdown.org/](https://bookdown.org/) and [https://bookdown.org/yihui/bookdown/](https://bookdown.org/yihui/bookdown/)
 
 ## flexdashboards
 
+* Package to allow you to build a dashboard of visualizations using R Markdown
+
+* Incorporates htmlwidgets
+
+* Designed to work well on mobile devices as well
+
+* Can integrate with shiny for reactivity
+
+* More resources at [http://rmarkdown.rstudio.com/flexdashboard/](http://rmarkdown.rstudio.com/flexdashboard/)
+
 ## ReporteRs
+
+* Package for producing Word and PowerPoint documents
+
+* Also contains functions for inserting code output into existing documents
+
+* Package homepage: [https://davidgohel.github.io/ReporteRs/index.html](https://davidgohel.github.io/ReporteRs/index.html)
