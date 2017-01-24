@@ -52,6 +52,7 @@ khailper
 <li>Packages
 <ul>
 <li>markdown</li>
+<li>rmarkdown</li>
 <li>yaml</li>
 </ul></li>
 <li>Additonal Programs
@@ -86,12 +87,27 @@ khailper
 <li>The + symbol was used for this line (preceded by four spaces)</li>
 <li>For ordered lists, use [number].</li>
 </ul></li>
-<li><p>For .pdf/.doc files page breaks can be created by <code>\newpage</code> or <code>\pagebreak</code> (on their own line)</p></li>
+<li><p>For PDF/DOC files page breaks can be created by <code>\newpage</code> or <code>\pagebreak</code> (on their own line)</p></li>
 <li><p>for slides, breaks by either (sub)headers or *** on one line</p></li>
 </ul>
 </div>
 <div id="math-syntax-basics" class="slide section level2">
 <h1>Math Syntax Basics</h1>
+<ul>
+<li><p>R Markdown uses LaTeX for handling equations</p></li>
+<li>Superscripts are done with ^; subscripts with _
+<ul>
+<li>for both, {} helps with longer strings</li>
+</ul></li>
+<li><p>Most othe commands start with <code>\</code></p></li>
+<li><p>for fractions, use <code>\frac{a}{b}</code> gives <span class="math inline">\(\frac{a}{b}\)</span></p></li>
+<li><p>Sigma notation is done with <code>\sum_{n=1}^N</code> to get <span class="math inline">\(\sum_{n=1}^N\)</span></p></li>
+<li><p><code>\sqrt{27}</code> yields <span class="math inline">\(\sqrt{27}\)</span></p></li>
+<li>More basics:</li>
+<li><a href="http://www.calvin.edu/~rpruim/courses/m343/F12/RStudio/LatexExamples.html" class="uri">http://www.calvin.edu/~rpruim/courses/m343/F12/RStudio/LatexExamples.html</a></li>
+<li><p><a href="https://rstudio-pubs-static.s3.amazonaws.com/18858_0c289c260a574ea08c0f10b944abc883.html" class="uri">https://rstudio-pubs-static.s3.amazonaws.com/18858_0c289c260a574ea08c0f10b944abc883.html</a></p></li>
+<li><p>For something more comprehensive: <a href="https://www.giss.nasa.gov/tools/latex/ltx-2.html" class="uri">https://www.giss.nasa.gov/tools/latex/ltx-2.html</a></p></li>
+</ul>
 </div>
 <div id="r-code-in-documents" class="slide section level2">
 <h1>R Code in documents</h1>
