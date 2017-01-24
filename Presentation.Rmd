@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 * R Markdown
     + R version of Markdown, a markup language
+    
 * YAML
     + Header (RStudio builds this for you)
     + Tells computer what kind of doc your building
@@ -63,11 +64,30 @@ knitr::opts_chunk$set(echo = FALSE)
     + The + symbol was used for this line (preceded by four spaces)
     + For ordered lists, use [number].
 
-* For .pdf/.doc files page breaks can be created by `\newpage` or `\pagebreak` (on their own line)
+* For PDF/DOC files page breaks can be created by `\newpage` or `\pagebreak` (on their own line)
 
 * for slides, breaks by either (sub)headers or *** on one line
 
 ## Math Syntax Basics
+
+* R Markdown uses LaTeX for handling equations
+
+* Superscripts are done with ^; subscripts with _
+    + for both, {} helps with longer strings
+    
+* Most othe commands start with `\`
+
+* for fractions, use `\frac{a}{b}` gives $\frac{a}{b}$
+
+* Sigma notation is done with `\sum_{n=1}^N` to get $\sum_{n=1}^N$
+
+* `\sqrt{27}` yields $\sqrt{27}$
+
+* More basics:
+   + [http://www.calvin.edu/~rpruim/courses/m343/F12/RStudio/LatexExamples.html](http://www.calvin.edu/~rpruim/courses/m343/F12/RStudio/LatexExamples.html)
+   + [https://rstudio-pubs-static.s3.amazonaws.com/18858_0c289c260a574ea08c0f10b944abc883.html](https://rstudio-pubs-static.s3.amazonaws.com/18858_0c289c260a574ea08c0f10b944abc883.html)
+   
+* For something more comprehensive: [https://www.giss.nasa.gov/tools/latex/ltx-2.html](https://www.giss.nasa.gov/tools/latex/ltx-2.html)
 
 ## R Code in documents
 
