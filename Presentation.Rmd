@@ -3,8 +3,8 @@ title: "Authoring Documents in RStudio"
 author: "khailper"
 date: "February 16, 2017"
 output:
-  beamer_presentation: default
   slidy_presentation: default
+  beamer_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -27,7 +27,8 @@ knitr::opts_chunk$set(echo = FALSE)
     + [cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
     + [reference document](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
     + Available in RStudio (Help -> Cheetsheets)
-    + Even more resources at [http://rmarkdown.rstudio.com/](http://rmarkdown.rstudio.com/)
+    + Even more resources at [http://rmarkdown.rstudio.com/](http://rmarkdown.rstudio.com/) 
+    + [Good blog post on integrating R Markdown into your workflow](https://www.rstudio.com/rviews/2017/01/25/r-markdown-for-the-enterprise/)
 
 ## Requirements
 
