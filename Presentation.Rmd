@@ -3,8 +3,8 @@ title: "Authoring Documents in RStudio"
 author: "khailper"
 date: "February 16, 2017"
 output:
-  beamer_presentation: default
   slidy_presentation: default
+  beamer_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -85,8 +85,8 @@ knitr::opts_chunk$set(echo = FALSE)
 * `\sqrt{27}` yields $\sqrt{27}$
 
 * More basics:
-   + [http://www.calvin.edu/~rpruim/courses/m343/F12/RStudio/LatexExamples.html](http://www.calvin.edu/~rpruim/courses/m343/F12/RStudio/LatexExamples.html)
-   + [https://rstudio-pubs-static.s3.amazonaws.com/18858_0c289c260a574ea08c0f10b944abc883.html](https://rstudio-pubs-static.s3.amazonaws.com/18858_0c289c260a574ea08c0f10b944abc883.html)
+    + [http://www.calvin.edu/~rpruim/courses/m343/F12/RStudio/LatexExamples.html](http://www.calvin.edu/~rpruim/courses/m343/F12/RStudio/LatexExamples.html)
+    + [https://rstudio-pubs-static.s3.amazonaws.com/18858_0c289c260a574ea08c0f10b944abc883.html](https://rstudio-pubs-static.s3.amazonaws.com/18858_0c289c260a574ea08c0f10b944abc883.html)
    
 * For something more comprehensive: [https://www.giss.nasa.gov/tools/latex/ltx-2.html](https://www.giss.nasa.gov/tools/latex/ltx-2.html)
 
@@ -101,6 +101,8 @@ knitr::opts_chunk$set(echo = FALSE)
 * Last line of chunk is ` ``` `.
 
 * Both should be their own line
+
+* Shortcut for creating chunks: Ctrl/Cmd + Alt + I
 
 ## Code Chunk Parameters
 * A variety of parameters can be included within {}
