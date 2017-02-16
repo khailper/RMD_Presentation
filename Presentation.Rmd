@@ -3,8 +3,8 @@ title: "Authoring Documents in RStudio"
 author: "Karl Hailperin"
 date: "February 16, 2017"
 output:
-  beamer_presentation: default
   slidy_presentation: default
+  beamer_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -29,7 +29,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Requirements
 
-* Rstudio
+* RStudio
 * Packages
     + markdown
     + rmarkdown
@@ -135,4 +135,4 @@ knitr::opts_chunk$set(echo = FALSE)
 * Also contains functions for inserting code output into existing documents
 * Package homepage: [https://davidgohel.github.io/ReporteRs/index.html](https://davidgohel.github.io/ReporteRs/index.html)
 
-
+## Questions?
