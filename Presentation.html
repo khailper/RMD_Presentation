@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <meta name="author" content="khailper" />
+  <meta name="author" content="Karl Hailperin" />
   <meta name="date" content="2017-02-16" />
   <title>Authoring Documents in RStudio</title>
   <style type="text/css">code{white-space: pre;}</style>
@@ -16,7 +16,7 @@
 <div class="slide titlepage">
   <h1 class="title">Authoring Documents in RStudio</h1>
   <p class="author">
-khailper
+Karl Hailperin
   </p>
   <p class="date">February 16, 2017</p>
 </div>
@@ -49,7 +49,7 @@ khailper
 <div id="requirements" class="slide section level2">
 <h1>Requirements</h1>
 <ul>
-<li><p>Rstudio</p></li>
+<li>Rstudio</li>
 <li>Packages
 <ul>
 <li>markdown</li>
@@ -58,7 +58,7 @@ khailper
 </ul></li>
 <li>Additonal Programs
 <ul>
-<li>TeX for PDF documents</li>
+<li>TeX for PDF documents/math</li>
 <li>MS Word or Open/Libre Office for Word documents</li>
 </ul></li>
 </ul>
@@ -66,19 +66,19 @@ khailper
 <div id="creating-a-document" class="slide section level2">
 <h1>Creating a Document</h1>
 <ul>
-<li><p>File -&gt; New File -&gt; R Markdown</p></li>
+<li>File -&gt; New File -&gt; R Markdown</li>
 <li>Select document type you want to build
 <ul>
 <li>this presentation was knit as a Slidy presentation</li>
 </ul></li>
-<li><p>RStudio automatically creates the apporopriate YAML header and some sample code</p></li>
-<li><p>When you want to create the document, click “Knit”</p></li>
+<li>RStudio automatically creates the apporopriate YAML header and some sample code</li>
+<li>When you want to create the document, click “Knit”</li>
 </ul>
 </div>
 <div id="r-markdown-basics" class="slide section level2">
 <h1>R Markdown Basics</h1>
 <ul>
-<li><p>Starting line with #s followed by space for headers (more #s = sub-headers)</p></li>
+<li>Starting line with #s followed by space for headers (more #s = sub-headers)</li>
 <li>Format is done by surrounding text with symbols (<code>*</code> or _ for italics, ** or __ for bold, for ^ for superscripts)
 <ul>
 <li>Equations are similar, surrounded by $</li>
@@ -86,30 +86,33 @@ khailper
 <li>These bullets were created with <code>*</code>
 <ul>
 <li>The + symbol was used for this line (preceded by four spaces)</li>
-<li>For ordered lists, use [number].</li>
+<li>For ordered lists, use number.</li>
+</ul>
+<ul class="incremental">
+<li>This line was done with <code>&gt;-</code></li>
 </ul></li>
-<li><p>For PDF/DOC files page breaks can be created by <code>\newpage</code> or <code>\pagebreak</code> (on their own line)</p></li>
-<li><p>for slides, breaks by either (sub)headers or *** on one line</p></li>
+<li>For PDF/DOC files page breaks can be created by <code>\newpage</code> or <code>\pagebreak</code> (on their own line)</li>
+<li>for slides, breaks by either (sub)headers or *** on one line</li>
 </ul>
 </div>
 <div id="math-syntax-basics" class="slide section level2">
 <h1>Math Syntax Basics</h1>
 <ul>
-<li><p>R Markdown uses LaTeX for handling equations</p></li>
+<li>R Markdown uses LaTeX for handling equations</li>
 <li>Superscripts are done with ^; subscripts with _
 <ul>
 <li>for both, {} helps with longer strings</li>
 </ul></li>
-<li><p>Most othe commands start with <code>\</code></p></li>
-<li><p>for fractions, use <code>\frac{a}{b}</code> gives <span class="math inline">\(\frac{a}{b}\)</span></p></li>
-<li><p>Sigma notation is done with <code>\sum_{n=1}^N</code> to get <span class="math inline">\(\sum_{n=1}^N\)</span></p></li>
-<li><p><code>\sqrt{27}</code> yields <span class="math inline">\(\sqrt{27}\)</span></p></li>
+<li>Most othe commands start with <code>\</code></li>
+<li>for fractions, use <code>\frac{a}{b}</code> gives <span class="math inline">\(\frac{a}{b}\)</span></li>
+<li>Sigma notation is done with <code>\sum_{n=1}^N</code> to get <span class="math inline">\(\sum_{n=1}^N\)</span></li>
+<li><code>\sqrt{27}</code> yields <span class="math inline">\(\sqrt{27}\)</span></li>
 <li>More basics:
 <ul>
 <li><a href="http://www.calvin.edu/~rpruim/courses/m343/F12/RStudio/LatexExamples.html" class="uri">http://www.calvin.edu/~rpruim/courses/m343/F12/RStudio/LatexExamples.html</a></li>
 <li><a href="https://rstudio-pubs-static.s3.amazonaws.com/18858_0c289c260a574ea08c0f10b944abc883.html" class="uri">https://rstudio-pubs-static.s3.amazonaws.com/18858_0c289c260a574ea08c0f10b944abc883.html</a></li>
 </ul></li>
-<li><p>For something more comprehensive: <a href="https://www.giss.nasa.gov/tools/latex/ltx-2.html" class="uri">https://www.giss.nasa.gov/tools/latex/ltx-2.html</a></p></li>
+<li>For something more comprehensive: <a href="https://www.giss.nasa.gov/tools/latex/ltx-2.html" class="uri">https://www.giss.nasa.gov/tools/latex/ltx-2.html</a></li>
 </ul>
 </div>
 <div id="r-code-in-documents" class="slide section level2">
@@ -123,68 +126,79 @@ khailper
 <ul>
 <li>code chunks don’t need names, but can be useful</li>
 </ul></li>
-<li><p>Last line of chunk is <code>```</code>.</p></li>
-<li><p>Both should be their own line</p></li>
-<li><p>Shortcut for creating chunks: Ctrl/Cmd + Alt + I</p></li>
+<li>Last line of chunk is <code>```</code>.</li>
+<li>Both should be their own line</li>
+<li>Shortcut for creating chunks: Ctrl/Cmd + Alt + I</li>
 </ul>
 </div>
 <div id="code-chunk-parameters" class="slide section level2">
 <h1>Code Chunk Parameters</h1>
 <ul>
-<li><p>A variety of parameters can be included within {}</p></li>
+<li>A variety of parameters can be included within {}</li>
 <li>Some common ones (and their default values)
 <ul>
 <li>eval (TRUE): Should the code be run</li>
 <li>echo (TRUE): should the code be displayed in doc</li>
 </ul></li>
-<li><p>Can use knitr::opts_chunk$set(Parameter = TRUE/FALSE) to change defaults</p></li>
+<li>Can use knitr::opts_chunk$set(Parameter = TRUE/FALSE) to change defaults</li>
 </ul>
 </div>
 <div id="caching" class="slide section level2">
 <h1>Caching</h1>
 <ul>
-<li><p>By default, data from chunks not stored</p></li>
-<li><p>Can set cache = TRUE to store output</p></li>
-<li><p>This lasts until you change the chunk (however, doesn’t check if earlier chunk changed)</p></li>
+<li>By default, data from chunks not stored</li>
+<li>Can set cache = TRUE to store output</li>
+<li>This lasts until you change the chunk (however, doesn’t check if earlier chunk changed)</li>
 </ul>
 </div>
 <div id="quick-demo" class="slide section level2">
 <h1>Quick Demo</h1>
 </div>
+<div id="r-presentations" class="slide section level2">
+<h1>R Presentations</h1>
+<ul>
+<li>Another way to produce html slide decks</li>
+<li>Requires RStudio 0.98 or later</li>
+<li>Mostly the same syntax (differences include slide breaks (13x= under title))</li>
+<li>Generaly simpler than Rmarkdown (particularly for two-column slides)</li>
+<li>Allows global options for slide transitions, incremental items within slides, etc.</li>
+<li>More resources at <a href="https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations" class="uri">https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations</a></li>
+</ul>
+</div>
 <div id="r-notebooks" class="slide section level2">
 <h1>R Notebooks</h1>
 <ul>
-<li><p>Introducted in RStudio v1.0</p></li>
-<li><p>Allows chunks to be run as you work, instead of having to re-knit the whole documents</p></li>
-<li><p>Also allows chunks written in other languages</p></li>
-<li><p>More resources at <a href="http://rmarkdown.rstudio.com/r_notebooks.html" class="uri">http://rmarkdown.rstudio.com/r_notebooks.html</a> and <a href="https://blog.rstudio.org/2016/10/05/r-notebooks/" class="uri">https://blog.rstudio.org/2016/10/05/r-notebooks/</a></p></li>
+<li>Introducted in RStudio v1.0</li>
+<li>Allows chunks to be run as you work, instead of having to re-knit the whole documents</li>
+<li>Also allows chunks written in other languages</li>
+<li>More resources at <a href="http://rmarkdown.rstudio.com/r_notebooks.html" class="uri">http://rmarkdown.rstudio.com/r_notebooks.html</a> and <a href="https://blog.rstudio.org/2016/10/05/r-notebooks/" class="uri">https://blog.rstudio.org/2016/10/05/r-notebooks/</a></li>
 </ul>
 </div>
 <div id="bookdown" class="slide section level2">
 <h1>bookdown</h1>
 <ul>
-<li><p>r package for authoring books w/R Markdown</p></li>
-<li><p>In addition to HTML and PDF, can have EPUB outputs.</p></li>
-<li><p>More resources at <a href="https://bookdown.org/" class="uri">https://bookdown.org/</a> and <a href="https://bookdown.org/yihui/bookdown/" class="uri">https://bookdown.org/yihui/bookdown/</a></p></li>
+<li>r package for authoring books w/R Markdown</li>
+<li>In addition to HTML and PDF, can have EPUB outputs.</li>
+<li>More resources at <a href="https://bookdown.org/" class="uri">https://bookdown.org/</a> and <a href="https://bookdown.org/yihui/bookdown/" class="uri">https://bookdown.org/yihui/bookdown/</a></li>
 </ul>
 </div>
 <div id="flexdashboards" class="slide section level2">
 <h1>flexdashboards</h1>
 <ul>
-<li><p>Package to allow you to build a dashboard of visualizations using R Markdown</p></li>
-<li><p>Incorporates htmlwidgets</p></li>
-<li><p>Designed to work well on mobile devices as well</p></li>
-<li><p>Can integrate with shiny for reactivity</p></li>
-<li><p>More resources at <a href="http://rmarkdown.rstudio.com/flexdashboard/" class="uri">http://rmarkdown.rstudio.com/flexdashboard/</a></p></li>
-<li><p><a href="http://lenkiefer.com/2017/01/22/build-flex">Useful blog post on building flexdashboards</a></p></li>
+<li>Package to allow you to build a dashboard of visualizations using R Markdown</li>
+<li>Incorporates htmlwidgets</li>
+<li>Designed to work well on mobile devices as well</li>
+<li>Can integrate with shiny for reactivity</li>
+<li>More resources at <a href="http://rmarkdown.rstudio.com/flexdashboard/" class="uri">http://rmarkdown.rstudio.com/flexdashboard/</a></li>
+<li><a href="http://lenkiefer.com/2017/01/22/build-flex">Useful blog post on building flexdashboards</a></li>
 </ul>
 </div>
 <div id="reporters" class="slide section level2">
 <h1>ReporteRs</h1>
 <ul>
-<li><p>Package for producing Word and PowerPoint documents</p></li>
-<li><p>Also contains functions for inserting code output into existing documents</p></li>
-<li><p>Package homepage: <a href="https://davidgohel.github.io/ReporteRs/index.html" class="uri">https://davidgohel.github.io/ReporteRs/index.html</a></p></li>
+<li>Package for producing Word and PowerPoint documents</li>
+<li>Also contains functions for inserting code output into existing documents</li>
+<li>Package homepage: <a href="https://davidgohel.github.io/ReporteRs/index.html" class="uri">https://davidgohel.github.io/ReporteRs/index.html</a></li>
 </ul>
 </div>
 
